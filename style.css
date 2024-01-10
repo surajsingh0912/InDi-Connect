@@ -392,110 +392,177 @@ section img:hover{
     right: 500px;
     bottom: 150px;
 }
-
-/*Blog Section*/
-/* .Blogs .intro-text {
-    font-size: 78px;
-    text-align: center;
-    color: rgb(13, 140, 186); 
-    
-}
-
-.Blogs .card {
-    background-color: white;
-    color: #080808;
-    padding: 20px;
-    margin-top: 20px;
-    box-shadow: var(--box-shadow);
- }
-
-@media screen and (max-width: 800px) {
-    .leftcolumn, .rightcolumn {   
-      width: 100%;
-      padding: 0;
-    }
-}
-
-.Blogs .leftcolumn {   
-    float: left;
-    width: 50%;
-}
-  
-.Blogs .rightcolumn {
-    float: left;
-    width: 50%;
-    padding-left: 20px;
-}
-
-.Blogs .para{
-    font-size: 16px;
-}
-
-.Blogs .heading {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.Blogs .image {
-
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-* {
-    box-sizing: border-box;
-  }
-  */
-
-  .blogs h1{
+.blogs h1 {
     text-align: center;
     font-size: 10rem;
     margin: 0 auto;
-   color: #0c3d12;
+    color: #0c3d12;
 }
-  .blogs .blogs-slider .box{
+
+.blogs .blogs-slider .box {
 
     border: var(--border);
     margin: 2rem 0;
 }
-.blogs .blogs-slider .box:hover{
+
+.blogs .blogs-slider .box:hover {
     border: var(--border-hover);
 }
 
-.blogs .blogs-slider .box .image{
+.blogs .blogs-slider .box .image {
     height: 25rem;
     overflow: hidden;
     width: 100%;
 }
-.blogs .blogs-slider .box .image img{
-    height:100% ;
+
+.blogs .blogs-slider .box .image img {
+    height: 100%;
     object-fit: cover;
     width: 100%;
 }
-.blogs .blogs-slider .box:hover .image img{
+
+.blogs .blogs-slider .box:hover .image img {
     transform: scale(1.1);
-    
+
 }
-.blogs .blogs-slider .box .content{
+
+.blogs .blogs-slider .box .content {
     padding: 1.5rem;
     gap: 1.5rem;
 }
-.blogs .blogs-slider .box .content h3{
+
+.blogs .blogs-slider .box .content h3 {
     font-size: 2.2rem;
     color: var(--black);
 }
-.blogs .blogs-slider .box .content p{
+
+.blogs .blogs-slider .box .content p {
     font-size: 1.2rem;
     color: var(--light-color);
     padding: 1rem 0;
     line-height: 2;
-} 
-.swiper-wrapper{
+}
+
+.swiper-wrapper {
     width: 26%;
 }
 
+
+
+
+
+
+
+
+.intro-text{
+    font-size: 9rem;
+    font-weight: 900;
+    text-align: center;
+    color: #0c3d12;
+   
+}
+
+.container{
+    max-width: 1200;
+    margin: auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+}
+.container__left h1{
+    margin-bottom: 2rem;
+    font-size: 5.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+.container__left p{
+    color: var(--text-dark);
+    margin-bottom: 5rem;
+    font-size: 2rem;
+    font-weight: 700;
+    
+}
+.container__left button{
+    padding: 1re 4rem;
+    margin-top: 4rem;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    background: #666;
+    font-size: 4rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+.container__right{
+    display: grid;
+    gap: 2rem;
+}
+.card{
+    padding: 2rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    border-radius: 1 rem;
+    box-shadow: 5px 5px 20px rgba(red, green, blue, alpha);
+    cursor: pointer;
+}
+.card img{
+    max-width: 75px;
+    border-radius: 100%;
+}
+.card__content{
+    display: flex;
+    gap: 1rem;
+}
+.card__content span i{
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.card__details p {
+    
+    color: var(--text-dark);
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.card__details h4 {
+    text-align: right;
+    color: var(--primary-color);
+    font-size: 4rem;
+    font-weight: 1000;
+}
+
+.footer{
+    background-color: #000;
+}
+
+.footer .box-container{
+    display: grid;
+grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+gap: 0.5rem;
+}
+
+.footer .box-container .box h3{ 
+    font-size: 2.2rem;
+    color: white;
+    padding: 1rem 0;
+}
+.footer .box-container .box a{ 
+    display: block;
+    font-size: 1.4rem;
+    color: rgb(114, 221, 114);
+    padding: 1rem 0;
+}
+.footer .box-container .box a i{
+    color: var(--blue);
+    padding-right: 0.5rem;
+}
+.footer .box-container .box a:hover i{
+    color: var(--darkcolor);
+    padding-right: 2rem;
+}
 
 
 
